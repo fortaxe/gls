@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Tenor_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/landing/header";
+import { Footer } from "@/components/landing/footer";
 
-const geistSans = Geist({
+const tenorSans = Tenor_Sans({
+  variable: "--font-tenor-sans",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const geistSans = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +31,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <head>
+        <link rel="icon" type="image/png" href="/logo.png?v=2" />
+        <link rel="preload" href="/logo.png" as="image" type="image/png" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${tenorSans.variable} antialiased`}
       >
+        {/* <Header /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );

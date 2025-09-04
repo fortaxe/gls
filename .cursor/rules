@@ -1,0 +1,219 @@
+## Core Technology Stack
+
+- **Framework**: Next.js 14+ with App Router
+- **Language**: TypeScript (strict mode enabled)
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **State Management**: Zustand for client-side state
+- **API Management**: TanStack Query (React Query) for data fetching and caching
+- **Form Handling**: React Hook Form with Zod validation
+- **Rendering Strategy**: Prioritize Server-Side Rendering (SSR) and Server Components
+
+## TypeScript Guidelines
+
+### Type Safety Rules
+
+- **NEVER use `any` type** - Always define proper, specific types
+- Use `unknown` instead of `any` when type is truly unknown
+- Leverage TypeScript's strict mode and enable all strict flags
+- Define interfaces for all object shapes and API responses
+- Use generic types for reusable components and functions
+- Prefer `type` over `interface` for union types and computed types
+- Use `const assertions` for immutable data structures
+
+### 
+
+## Zod Schema Integration
+
+### Schema Definition Rules
+
+- Define Zod schemas for all form validations and API data validation
+- Co-locate schemas with their corresponding components or API routes
+- Use Zod's `infer` utility to generate TypeScript types from schemas
+- Create reusable schema building blocks for common validation patterns
+- Always validate data at boundaries (API routes, form submissions)
+
+## TanStack Query API Management
+
+### Query Organization
+
+- Use TanStack Query for all client-side data fetching and caching
+- Define query keys using hierarchical structure for cache invalidation
+- Create custom hooks for each API endpoint
+- Implement proper error handling and retry strategies
+- Use optimistic updates for better user experience
+
+### 
+
+### Mutation Best Practices
+
+- Use mutations for all data modifications (POST, PUT, DELETE)
+- Implement optimistic updates where appropriate
+- Invalidate relevant queries after successful mutations
+- Provide user feedback during mutation states
+- Handle mutation errors with proper user notifications
+
+### Query Key Management
+
+```tsx
+// lib/query-keys.ts
+/**
+ * Centralized query key factory for consistent cache management
+ * Provides type-safe query keys for all API endpoints
+ */
+export const queryKeys = {
+  users: {
+    all: ['users'] as const,
+    lists: () => [...queryKeys.users.all, 'list'] as const,
+    list: (filters: UserFilters) => [...queryKeys.users.lists(), filters] as const,
+    details: () => [...queryKeys.users.all, 'detail'] as const,
+    detail: (id: string) => [...queryKeys.users.details(), id] as const,
+    profile: (id: string) => [...queryKeys.users.detail(id), 'profile'] as const,
+  },
+  posts: {
+    all: ['posts'] as const,
+    lists: () => [...queryKeys.posts.all, 'list'] as const,
+    list: (filters: PostFilters) => [...queryKeys.posts.lists(), filters] as const,
+    details: () => [...queryKeys.posts.all, 'detail'] as const,
+    detail: (id: string) => [...queryKeys.posts.details(), id] as const,
+  },
+} as const;
+
+```
+
+### Server-Client Data Integration
+
+- Use TanStack Query primarily for Client Components
+- Hydrate client-side cache with server-fetched data
+- Implement proper cache invalidation strategies
+
+### Form Component Structure
+
+- Use React Hook Form for all form handling
+- Integrate with Zod using `@hookform/resolvers/zod`
+- Implement proper error handling and user feedback
+- Use controlled components for complex form fields
+- Always provide loading states during form submission
+
+## Component Documentation Standards
+
+### Component Comments
+
+- Add JSDoc comments for all components explaining purpose and usage
+- Document all props with descriptions and examples
+- Include usage examples for complex components
+- Explain any business logic or side effects
+- Document performance considerations for heavy components
+
+## Server-Side Rendering Priorities
+
+### Rendering Strategy
+
+- Default to Server Components unless client interactivity is required
+- Use Client Components only for:
+    - Event handlers and user interactions
+    - Browser-only APIs (localStorage, geolocation)
+    - State management with hooks
+    - Third-party libraries requiring client-side execution
+
+### SSR Implementation Guidelines
+
+- Implement proper data fetching in Server Components
+- Use `async/await` for server-side data operations
+- Handle loading and error states appropriately
+- Optimize for Core Web Vitals (LCP, FID, CLS)
+- Implement proper SEO meta tags and structured data
+
+## 
+
+### Store Organization
+
+- Create focused, single-responsibility stores
+- Use slices pattern for complex state management
+- Implement proper TypeScript interfaces for store state
+- Add devtools integration for development debugging
+- Keep stores minimal and avoid storing derived data
+
+## UI/UX Design Principles
+
+### Modern Design Standards
+
+- Implement clean, minimalist interfaces with purposeful whitespace
+- Use consistent spacing scale (4px, 8px, 16px, 24px, 32px)
+- Apply subtle animations and transitions for enhanced user experience
+- Ensure proper contrast ratios for accessibility (WCAG AA compliance)
+- Implement responsive design with mobile-first approach
+
+### shadcn/ui Component Usage
+
+- Prioritize shadcn/ui components over custom implementations
+- Customize components through Tailwind classes rather than overriding styles
+- Maintain consistent design tokens across the application
+- Use shadcn's built-in dark mode support
+- Implement proper loading skeletons using shadcn components
+
+### Anti-AI Generated UI Patterns
+
+- Avoid generic placeholder text like "Lorem ipsum" or "Click here"
+- Use specific, contextual content that serves the user's actual needs
+- Implement real data structures rather than mock arrays
+- Create meaningful user flows rather than isolated component showcases
+- Focus on solving actual user problems rather than demonstrating features
+
+### Naming Conventions
+
+- Use PascalCase for components and types
+- Use camelCase for functions and variables
+- Use kebab-case for file names and directories
+- Use SCREAMING_SNAKE_CASE for constants
+- Prefix custom hooks with `use`
+- Prefix type definitions with appropriate context
+
+### Next.js Optimization
+
+- Implement proper image optimization using `next/image`
+- Use dynamic imports for code splitting
+- Implement proper caching strategies for API routes
+- Optimize bundle size with tree shaking
+- Use Server Actions for form submissions when appropriate
+
+### React Performance
+
+- Implement proper memoization with `useMemo` and `useCallback`
+- Use React.memo for expensive component renders
+- Avoid prop drilling by using Zustand stores appropriately
+- Implement proper key props for list items
+- Use Suspense boundaries for data fetching
+
+## Error Handling
+
+### Error Boundaries
+
+- Implement error boundaries for graceful error handling
+- Provide meaningful error messages to users
+- Log errors appropriately for debugging
+- Create fallback UI components for error states
+- Handle both client and server-side errors properly
+
+### Validation Error Handling
+
+- Display form validation errors inline with fields
+- Provide clear, actionable error messages
+- Implement proper error styling using shadcn components
+- Handle network errors gracefully
+- Provide retry mechanisms for failed operations
+
+## Code Quality Standards
+
+### Code Review Checklist
+
+- All components have proper TypeScript interfaces
+- No `any` types present in codebase
+- All forms use React Hook Form with Zod validation
+- TanStack Query hooks properly implemented with error handling
+- Components include comprehensive JSDoc comments
+- Query keys are centralized and follow naming conventions
+- Error handling implemented for all async operations
+- Performance optimizations applied where appropriate
+- Accessibility requirements met
+- Modern UI patterns without AI-generated feel
+- Proper cache invalidation strategies implemented
