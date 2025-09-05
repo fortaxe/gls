@@ -1,9 +1,7 @@
 "use client"
 
 import React, { useCallback, useEffect, useState, forwardRef, useImperativeHandle } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { Button } from './button'
 
 interface CarouselProps {
   children: React.ReactNode[]

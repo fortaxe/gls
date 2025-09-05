@@ -39,18 +39,39 @@ export const heroSlides = [
 export const latestLaunch = [
   {
    firstText: "75% ",
-   secondText: "Open Space"
+   secondText: "Open Space",
+   image: "/hero/1.png",
+   link: "#",
   },
   {
     firstText: "Large 3 Bed Homes",
-    secondText: ", the way North India used to love living"
+    secondText: "the way North India used to love living",
+    image: "/hero/1.png",
+    link: "#",
   },
   {
     firstText: "Designed by renowned",
-    secondText: "International Architect"
+    secondText: "International Architect",
+    image: "/hero/1.png",
+    link: "#",
   },
   {
-    firstText: "Open Spaces",
-    secondText: "featuring play areas, gardens, sports zones and greens spread across 30+ species of flora."
+    firstText: " 6 lifestyle-enhancing zones",
+    secondText: "featuring play areas, gardens, sports zones and greens spread across 30+ species of flora.",
+    image: "/hero/1.png",
+    link: "#",
+  },
+  {
+   firstText: "Over 30 Amenities",
+   secondText: "catering to all age groups.",
+   image: "/hero/1.png",
+   link: "#",
+  },
+  {
+    firstText: "Untramelled soul-soothing",
+    secondText: "views for a lifetime.",
+    thirdText: "No shared walls.",
+    image: "/hero/1.png",
+    link: "#",
   }
 ]
