@@ -15,7 +15,7 @@ import PrimaryButton from "../buttons/primary";
 
 export function LatestLaunchSection() {
   return (
-    <section className="py-[96px] ">
+    <section className="pt-[96px] pb-12">
       <div className=" ">
         <p
           className={cn(
