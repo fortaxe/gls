@@ -35,3 +35,22 @@ export const heroSlides = [
     footerRight: "AVENUE CITY"
   }
 ]
+
+export const latestLaunch = [
+  {
+   firstText: "75% ",
+   secondText: "Open Space"
+  },
+  {
+    firstText: "Large 3 Bed Homes",
+    secondText: ", the way North India used to love living"
+  },
+  {
+    firstText: "Designed by renowned",
+    secondText: "International Architect"
+  },
+  {
+    firstText: "Open Spaces",
+    secondText: "featuring play areas, gardens, sports zones and greens spread across 30+ species of flora."
+  }
+]
