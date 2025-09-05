@@ -5,12 +5,9 @@
  * Displays recent projects with auto-sliding functionality
  */
 import React from "react";
-
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { latestLaunch } from "@/lib/data";
-import LatestLaunchCard from "./latest-launch";
-import { LaunchCarousel } from "../ui/launch-carousel";
+import { UnifiedLaunchCarousel } from "../ui/unified-launch-carousel";
 import PrimaryButton from "../buttons/primary";
 
 export function LatestLaunchSection() {
@@ -39,26 +36,13 @@ export function LatestLaunchSection() {
         </div>
 
         {/* Projects Carousel */}
-        <div className=" ">
-        <div className="flex flex-row ">
-          <LaunchCarousel
+        <div className="">
+          <UnifiedLaunchCarousel
+            items={latestLaunch}
             autoSlide={true}
             autoSlideInterval={4000}
-            showArrows={true}
-            showDots={true}
             className="pb-16"
-          >
-            {latestLaunch.map((project, index) => (
-              <LatestLaunchCard
-                key={index}
-                firstText={project.firstText}
-                secondText={project.secondText}
-                image={project.image}
-                link={project.link}
-              />
-            ))}
-            </LaunchCarousel>
-        </div>
+          />
         </div>
 
         {/* View More Button */}

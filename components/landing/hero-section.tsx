@@ -55,7 +55,7 @@ export function HeroSection() {
             
             {/* Content */}
             <div className={cn(
-              "relative z-20 max-w-[1440px] px-4 md:px-[90px] mx-auto",
+              "relative z-20 max-w-[1440px] px-4 md:px-[96px] mx-auto",
               "flex items-center justify-start w-full"
             )}>
               <div className="w-full max-w-2xl">
@@ -107,6 +107,7 @@ export function HeroSection() {
                 {slide.title.startsWith("The") && (
                 <div className="mt-8">
                   <PrimaryButton 
+                  variant="primary"
                     name={slide.buttonText}
                     onClick={() => {
                       // Add enquiry functionality here

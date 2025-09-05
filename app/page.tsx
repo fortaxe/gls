@@ -8,13 +8,15 @@ import { AboutSection } from "@/components/landing/about-section";
 import { BoardDirectorsSection } from "@/components/landing/board-directors-section";
 import { StoriesSection } from "@/components/landing/stories-section";
 import { SpotlightSection } from "@/components/landing/spotlight-section";
+import PropertyCarousel from "@/components/landing/property-coursel";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <main>
         <HeroSection />
-        <LatestLaunchSection />
+        {/* <LatestLaunchSection /> */}
+        <PropertyCarousel />
         <AboutSection />
         <BoardDirectorsSection />
         <StoriesSection />

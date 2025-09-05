@@ -46,13 +46,13 @@ export const latestLaunch = [
   {
     firstText: "Large 3 Bed Homes",
     secondText: "the way North India used to love living",
-    image: "/hero/1.png",
+    image: "/hero/2.png",
     link: "#",
   },
   {
     firstText: "Designed by renowned",
     secondText: "International Architect",
-    image: "/hero/1.png",
+    image: "/hero/3.png",
     link: "#",
   },
   {
