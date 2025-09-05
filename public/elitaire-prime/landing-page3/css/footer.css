@@ -1,0 +1,34 @@
+/* Footer */
+
+.footer-prgh {font-size: 12px; color: #808080; margin: 0; padding: 0;}
+.footer-list {display: flex; justify-content: center; flex-wrap: wrap; margin: 10px 0; padding: 0;}
+.footer-list li {list-style: none; border-right: 1px solid #808080; line-height: 1;}
+.footer-list li a {font-size: 13px; padding: 0 10px;  color: #808080; text-decoration: none;}
+.footer-list li:last-child {border-right: none;}
+
+.fix-btn { width: 60px; height: 60px; cursor: pointer; border-radius: 50%; background: #e63343; position: fixed; bottom: 30px; display: flex; justify-content: center; align-items: center; z-index: 99; }
+.fix-btn > svg {width: 50px; height: 50px; fill: #e63343; border-radius: 50%;  border:2px solid #fff;}
+.right-pos {right: 20px;}
+.left-pos {left: 20px;}
+.fix-btn:hover > svg { fill:#c71f2e; }
+.fix-btn:hover { background: #c71f2e; }
+
+.chatbot-btn { width: 60px; height: 60px; right: 20px; border-radius: 50%; background: #e63343; position: fixed; bottom: 10px; display: flex; justify-content: center; align-items: center; z-index: 99; }
+.chatbot-btn > img {width: 50px; height: 50px; object-fit: contain; padding:5px;  border-radius: 50%;  border:2px solid #fff;}
+
+
+
+@media only screen and (max-width: 767px) {
+	.chatbox, .chatlogs {width: 100% !important;}
+}
+
+@media only screen and (max-width: 767px) {
+	.fix-btn, .chatbot-btn {width: 50px; height: 50px;}
+	.fix-btn > svg {width: 40px; height: 40px;} 
+	
+	.chatbot-btn > img {width: 40px; height: 40px;}
+}
+@media only screen and (max-width: 991px) { 
+	.nav-link.nav-btn > svg {margin-top: 0px;}
+}
+

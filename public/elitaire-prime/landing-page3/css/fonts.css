@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'proxima_novathin';
+    src: url('../fonts/proxima_nova_thin-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_thin-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Thin.otf') format('otf');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Semibold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Extrabold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_novafont';
+    src: url('../fonts/proxima_nova_font-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_font-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Fontt.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

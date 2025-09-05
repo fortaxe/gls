@@ -1,0 +1,544 @@
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet"> */
+
+/* font-family: 'Tenor Sans', sans-serif; */
+
+/* font-family: 'Poppins', sans-serif; */
+
+
+/* ============= Arawali City Design Color Style ===============  */
+/* ============= Design by Netleafinfosoft pvt ltd ===============  */
+
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Tenor+Sans&display=swap');
+
+:root{
+    --Arawali-primary-color: #000;/*#A8894D;*/
+    --Arawali-secondary-color: #E8E8E8;
+    --Arawali-light-color: #E8E8E8; /*#F7EBE1;*/
+    --Arawali-dark-color: #19130C;
+}
+.banner-social-icon ul li a{
+    color: var(--Arawali-light-color);
+}
+.banner-social-icon ul li {
+    margin-bottom: 15px;
+}
+
+.owl-nav.disabled {
+    display: none;
+}
+
+.bg-arawali-dark{
+    background-color: var(--Arawali-dark-color);
+}
+.bg-arawali-light{
+    background-color: var(--Arawali-light-color);
+}
+.bg-arawali-primary{
+    background-color: var(--Arawali-primary-color);
+}
+.text-arawali-light{
+    color: var(--Arawali-light-color);
+}
+.text-arawali-primary{
+    color: var(--Arawali-primary-color);
+}
+
+body{ font-family: 'Tenor Sans', sans-serif !important;}
+
+
+
+/* ======== header ==============  */
+
+
+.logo { margin: 11px 0 5px 0px}
+.navlr-pad {padding:0 !important;}
+header {background-color: #fff;}
+.navbar-nav {display: flex; align-items: center;}
+.navbar-nav > li:last-child {padding-right: 0px !important;}
+.navbar-nav > li.nav-item {padding: 0 15px;}
+.navbar-nav > li > a { text-transform: uppercase; line-height: 1; font-size: 15px !important; color:#465765 !important; padding: 10px 10px !important; margin-left: 0px !important; font-weight: 400; font-family: sans-serif; /*font-family: 'Dosis', sans-serif;*/ }
+.navbar-nav > li > a:hover {color: #000 !important;}
+/*.navbar-nav > li:last-child a { background: #14a2d6; color: #fff !important;  padding:0.5rem 25px !important; }
+.navbar-nav > li:last-child a > i {margin-left: 5px;}*/
+.dropdown-toggle::after {vertical-align: 3px !important; position: relative; top: -1px;}
+.resident-menu.dropdown-toggle::after {vertical-align: 3px !important; position: relative; top: -1px; margin-left: 0px;}
+.nav-link.nav-btn { font-size: 14px !important; padding:0 0px 0 0 !important; }
+.nav-link.nav-btn > svg {width:33px; height: 33px; fill: #3cbb2a; border-radius: 50%; margin-right: 0px; margin-top:-5px; }
+.nav-link.nav-btn > .whatsapp-icon {width:32px; height: 32px; margin-right: 0px; margin-top:-3px; position: relative; z-index: 9999; }
+
+.nav-link.nav-btn > span { font-size: 13px; margin-top: 0px; line-height: 1;}
+.navbar-nav > li:last-child a {border-right: none; }
+.navbar-light .navbar-toggler {margin-right: 15px;}
+.nav-item.dropdown {position: static;}
+.megamenu {width: 100%; margin: 0px !important; padding: 5px 0 20px !important; border: none !important; border-radius: 0px !important;}
+.dropdown-menutxt {color: #000; font-size: 16px; font-family: sans-serif; text-align: center; padding-top: 5px; display: block; margin: 0;}
+.mobdrop > img {width: 62px; margin: 2px auto 1px; display: block;}
+.mobdrop2 > img {width: 70px; margin: auto; display: block;}
+/*.bar1, .bar2, .bar3 {width: 24px; height: 3px;  background-color: grey; margin: 6px 0; transition: 0.4s;}
+.change .bar1 {-webkit-transform: rotate(-45deg) translate(-5px, 5px); transform: rotate(-45deg) translate(-5px, 5px); }
+.change .bar2 {opacity: 0; }
+.change .bar3 {-webkit-transform: rotate(45deg) translate(-8px, -8px); transform: rotate(45deg) translate(-8px, -8px); }*/
+.navbar-collapse {margin-top: 10px;}
+.mobbtn { display: none; text-align: right; margin-top:0px; padding: .25rem .75rem; background: none !important; border:none !important;  }
+.mobbtn:focus {outline: none;}
+.mobbtn > span { width: 24px; height: 3px; background:#808080; display: table; margin:6px auto 0px; transition: all .3s ease-in-out; }
+.mobbtn.is-active span:nth-child(2){opacity:0}
+.mobbtn.is-active span:nth-child(1){-webkit-transform:rotate(-45deg) translate(-5px, 5px);-ms-transform:rotate(-45deg) translate(-5px, 5px);-o-transform:rotate(-45deg) translate(-5px, 5px);transform:rotate(-45deg) translate(-5px, 5px)}
+.mobbtn.is-active span:nth-child(3){-webkit-transform:rotate(45deg) translate(-8px, -8px);-ms-transform:rotate(45deg) translate(-8px, -8px);-o-transform:rotate(45deg) translate(-8px, -8px);transform:rotate(45deg) translate(-8px, -8px)}
+.container-xxl {width: 100%; margin-right: auto; margin-left: auto; }
+@media only screen and (max-width: 400px) {
+    section.social-icons-bar {top: 23% !important;}
+}
+@media only screen and (max-width: 480px) {
+    .banner-section {margin-top: 5px}
+}
+@media (min-width: 401px) and (max-width: 480px) {
+    .mobile-img {transform: scale(1.080) !important;}
+    .banner-section {margin-top: 5px}
+    section.social-icons-bar {top: 30% !important;}
+}
+@media (min-width: 481px) and (max-width: 575px) {
+    .mobile-img {transform: scale(1.070) !important;}
+    .banner-section {margin-top: 10px}
+    section.social-icons-bar {top: 35% !important;}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .mobile-img {transform: scale(1.13) !important; margin-top: 19px !important;}
+    .banner-section {margin-top: 25px}
+    section.social-icons-bar {top: 40% !important;}
+    .banner-textarea {padding-top: 35px !important;}
+}
+@media only screen and (max-width: 767px) {
+	.carousel-item {min-height: 535px;}
+    .payment-plan-bg {padding: 10px 10px 10px 5px !important;}
+    .arawali-heading-text {font-size: 24px !important;}
+    .banner-section {background-color: #736970 !important; background-image: none !important; background-size: contain !important;}
+    .my-banner-row {min-height: auto !important;}
+    .banner-textarea {padding-top: 20px;}
+    .banner-heading {font-size: 32px !important; line-height: 1.3; padding-top: 15px;}
+    section.social-icons-bar { margin-left: 30px !important;}
+    .banner-tagline {padding-bottom: 20px;}
+    .mobile-img {transform: scale(1.090); margin-top: 17px;}
+}
+@media only screen and (max-width: 991px) {
+	.nav-link {margin-left: 0px !important;}
+	.mobbtn {display: block;}
+	.logo { padding:5px 0; margin: 6px 15px 0px 25px;}
+	.navbar-brand { width: 20% !important; }
+	.navbar-nav {background: #f2f2f2; padding: 0px 0; }
+	.navbar-nav li {width: 100%; border-bottom: 1px solid #eaeaea; padding: 0 0px !important;}
+	.navbar-nav li.active {border: 1px dashed #000;}
+	.navbar-nav > li > a {padding: 14px 15px 15px !important; color: #000 !important;}
+	.navbar-nav > li > a, .navbar-nav > li:first-child a {border: none; display: block; line-height: 1;}
+	.navbar-nav > li:last-child {margin-left: 15px;}
+	.mobdrop, .mobdrop2 {display: flex; align-items: center; border-bottom: 1px solid #eaeaea; padding: 10px 0;}
+	.mobdrop > img {width: 30px; margin:0 15px 0 0; display: none;}
+	.mobdrop2 > img  {margin: 0 15px 0 0; display: none;}
+	.dropdown-menutxt {padding-top: 0px; padding-left: 35px; font-size: 16px; color: #000 !important;}
+	.dropdown-toggle::after {float: right; margin-right: 12px; top: 0px !important;}
+	.dropdown-menu {background-color: #f2f2f2 !important;}
+	.megamenu .col-lg:last-of-type > .mobdrop, .megamenu .col-lg:last-of-type > .mobdrop2 {border-bottom: none;}
+	.megamenu.show {padding: 0px 0px 0px !important;}
+	.navbar-collapse {margin-top: 5px; z-index: 11;} 
+}
+@media only screen and (min-width: 992px) {
+	.navbar-brand { position: absolute; top: 0; z-index: 99;}
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute; top: 53px;
+    }
+	
+}
+
+@media (min-width: 1200px) {
+	.container-xxl {max-width: 1370px !important;}
+	.nav-link.nav-btn {margin-right: 15px;}
+	.logo {margin: 11px 0 5px 15px; position: relative; z-index: 9999;}
+} 
+
+@media only screen and (min-width: 768px){
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+    display: block!important;
+}
+}
+
+
+
+
+
+/* ======== header ==============  */
+
+/* img.logo.arawali-city {
+    max-width: 40px;
+    padding-right: 4px;
+    color: var(--Arawali-primary-color);
+}
+a.navbar-brand span {
+    color: #DA474C;
+}
+.arawali-city-nav .navbar-nav .nav-item a.nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+.navbar-whatsup{
+    width: 30px;
+    top: -3px;
+    position: relative;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+  }
+  .dropend .dropdown-toggle {
+    color: salmon;
+    margin-left: 1em;
+  }
+  .dropdown-item:hover {
+    background-color: var(--Arawali-primary-color);
+    color: #fff;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+  .dropdown:hover > .dropdown-menu,
+  .dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+  }
+  @media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+    .dropend .dropdown-toggle {
+      margin-left: 0.5em;
+    }
+  } */
+
+.owl-dots.disabled {
+    display: none;
+}
+
+section.social-icons-bar {
+    /*background: var(--Arawali-primary-color);*/
+    width: 37px;
+    padding: 4px 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 190px;
+    position: absolute;
+    top: 62%;
+    z-index: 10;
+    margin-left: 40px;
+}
+
+
+/*  ---------- Arawali banner -----------------  */
+
+
+
+.banner-section{
+    background-image: url('./images/banner.png');
+    background-size: cover;
+    background-position: center;
+    /* height: 500px; */
+    background-repeat: no-repeat;
+
+}
+
+
+.my-banner-row{
+    min-height: 735px;
+}
+
+.banner-heading {
+    font-size: 50px;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    color: var(--Arawali-secondary-color);
+}
+/* // Large devices (desktops, 992px and up) */
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 767.98px) {
+    .home-await {
+        background-image: url('../assets/images/home-await.jpg') !important;
+        background-position: center;
+        background-size: cover;
+        /* height: 500px; */
+        background-repeat: no-repeat;
+    }
+    .await-wrapper h2{
+        font-size: 24px !important;
+    }
+    .home-await  .banner-heading {
+        font-size: 45px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        color: #000 !important;
+    }
+ }
+
+
+ 
+ /* @media only screen and (min-width: 768px) { 
+    .home-await {
+        background-image: url('../assets/images/home-await.jpg');
+        background-position: center;
+        background-size: cover;
+        /* height: 500px; */
+        /* background-repeat: no-repeat; */
+    /* } */
+
+ /* } */
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1200px) { 
+    .banner-textarea {
+        padding-left: 60px;
+    }
+    .banner-heading {
+        font-size: 70px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        line-height: 90px;
+    }
+ }
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1400px) { 
+    .banner-heading {
+        font-size: 80px;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+    }
+ }
+
+ p.banner-tagline {
+    font-family: 'Tenor Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+color: var(--Arawali-light-color);
+line-height: 30px;
+}
+
+
+
+/* ------------ Arawali city ---------------- */
+
+h2.arawali-heading-text {
+    font-size: 40px;
+    font-weight: 400;
+}
+.arawali-city-card-heading {
+    font-size: 26px;
+}
+.card.arawali-city-card {
+    min-height: 230px;
+    background-color: var(--Arawali-light-color);
+}
+
+.card.arawali-city-card:hover {
+    height: 100%;
+    background-color: #000;
+}
+.card.card-reliable:hover .cards-img {
+    content: url('../assets/images/Reliable.png');
+}
+
+.card.card-reliable .cards-img {
+    content: url('../assets/images/Reliable-U.png');
+    margin: 0 auto 20px;
+ }
+
+.card.card-majestic:hover .cards-img {
+    content: url('../assets/images/Majestic-U.png');
+}
+
+.card.card-majestic .cards-img {
+    content: url('../assets/images/Majestic.png');
+    margin: 0 auto;
+ }
+
+
+
+ .card.card-guarantee:hover .cards-img {
+    content: url('../assets/images/Guarantee-U.png');
+}
+
+.card.card-guarantee .cards-img {
+    content: url('../assets/images/Guarantee.png');
+    margin: 0 auto;
+ }
+
+
+ .card.card-luxurious:hover .cards-img {
+    content: url('../assets/images/Luxurious-U.png');
+}
+
+.card.card-luxurious .cards-img {
+    content: url('../assets/images/Luxurious.png');
+    margin: 0 auto;
+ }
+
+
+
+.card.arawali-city-card .arawali-city-card-content  {
+    font-size: 13px;
+}
+
+.card.arawali-city-card:hover .arawali-city-card-heading {
+    color: #fff;
+}
+.card.arawali-city-card:hover .arawali-city-card-content  {
+    color: #fff;
+    
+}
+
+
+/* ------ Arawali slider -----------  */
+.slider-content-wrapper {
+    position: absolute;
+    bottom: 30px;
+    opacity: 0.800000011920929;
+    background: rgba(213, 211, 210, 0.80);
+    margin-right: 40px;
+    margin-left: 20px;
+    padding: 15px 20px 5px 25px;
+    width: 80%;
+}
+p.slider-pragh {
+    font-size: 13px;
+    line-height: 19px;
+}
+.slider-heading {
+    font-size: 20px;
+}
+
+
+
+.arawalli-payment-plan .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--Arawali-light-color);
+    background-color: var(--Arawali-primary-color);
+}
+button.nav-link:focus {outline: none;}
+.arawalli-payment-plan .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    border: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-right: 5px;
+    margin-bottom: 0px !important;
+    border-radius: 8px 8px 0 0;
+}
+.list-text:before {
+    content:url('../assets/images/plans-price-arawali.png');
+    margin: 0 20px 0 0;
+    position: relative; top: 2px;
+}
+
+
+.home-await{
+    background-image: url('../assets/images/gettyimages-1333831685-612x6121.png');
+    background-position: center;
+    background-size: cover;
+     /*min-height: 600px;*/ 
+    background-repeat: no-repeat;
+}
+.home-await-row {
+    min-height: 600px;
+}
+p.footer-text {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 18px;
+}
+.await-wrapper h2 {
+    font-size: 50px;
+}
+
+ul.banner-social-icon-list {
+    list-style: none;
+}
+.banner-social-icon-list ul li a {
+    color: var(--Arawali-light-color);
+}
+
+section.copyright {
+    border-top: 1px solid rgb(232 232 232 / 30%);
+
+}
+.copyright-hr {}
+.social-icon-footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 25px 0;
+}
+a.btn.btn-connectivity {
+    background: #000;
+    color: #fff;
+    font-family: 'Tenor Sans';
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    border-radius: 0;
+}
+a.btn.btn-connectivity:hover {
+    background: var(--Arawali-primary-color);
+    color: #fff;
+    font-family: 'Tenor Sans';
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    border-radius: 0;
+}
+a.btn.btn-connectivity:hover > i {
+    color: #fff;
+}
+.social-icon-footer ul li a{
+    color: #fff;
+}
+i.fa-solid.fa-arrow-right.arrow-connect {
+    transform: rotate(-44deg);
+    margin: 0 0px 0px 5px;
+}
+
+
+.fa-arrow-right {
+    color: var(--Arawali-primary-color);
+}
+
+p {font-size: 14px; line-height: 24px;}
+.payment-plan-bg {background-color: rgba(255, 255, 255, 0.6); padding: 30px 30px 30px 60px;}
+.hr {background-color: #fff; margin-bottom: 25px;}
+.footer-bg {background-color: #051017;}
+.footer-logo {width: 190px;}
+.plan-option-list ul li {font-size: 15px;}
+
+#arawali-city .owl-item {margin-right: -25%;}
+@media (max-width: 767px) {
+    .footer-logo {margin: auto; display: table;}
+    .social-icon-footer {display: flex; justify-content: center;}
+    .social-icon-footer + .text-arawali-light, p.footer-text {text-align: center;}
+    a.btn.btn-connectivity {font-size: 12px; padding: 8px 12px;}
+    a.btn.btn-connectivity > i {color: #fff;}
+}
+@media (min-width: 1920px) {
+    .my-banner-row {min-height: 1010px;}
+    .banner-textarea {padding-left: 100px;}
+    .home-await-row {min-height: 855px;}
+    .banner-heading {font-size: 73px;}
+}
+/*
+@media (min-width: 380px) and (max-width: 400px) {
+    .banner-textarea {padding-top: 410px !important;}
+}
+@media (min-width: 401px) and (max-width: 430px) {
+    .banner-textarea {padding-top: 450px !important;}
+}*/
