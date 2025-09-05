@@ -75,3 +75,41 @@ export const latestLaunch = [
     link: "#",
   }
 ]
+
+export const stories = [
+  {
+    id: 1,
+    name: 'Subhranshi Agarwal',
+    title: 'Happy Homeowner',
+    image: '/hero/1.png',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+  },
+  {
+    id: 2,
+    name: 'Khushi Joshi',
+    title: 'Satisfied Customer',
+    image: '/hero/2.png',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+  },
+  {
+    id: 3,
+    name: 'Rajesh Kumar',
+    title: 'Property Owner',
+    image: '/hero/3.png',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+  },
+  {
+    id: 4,
+    name: 'Priya Sharma',
+    title: 'First-Time Buyer',
+    image: '/hero/1.png',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+  },
+  {
+    id: 5,
+    name: 'Amit Verma',
+    title: 'Investor',
+    image: '/hero/2.png',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+  },
+]

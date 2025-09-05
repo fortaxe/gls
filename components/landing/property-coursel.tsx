@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { latestLaunch } from "@/lib/data";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import PrimaryButton from "../buttons/primary";
 
