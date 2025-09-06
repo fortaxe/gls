@@ -17,7 +17,7 @@ export function AboutSection() {
         <div className="flex flex-col  justify-between ">
           {/* Left Content */}
           <div className=" flex flex-col items-start">
-            <h2 className="text-[64px] font-medium text-[#1E1E1E] mb-6 leading-[110%] tracking-[-3%] text-left">
+            <h2 className="text-[64px] font-medium text-[#1E1E1E] leading-[110%] tracking-[-3%] text-left">
               About
               <br />
               <em className="italic font-[300]">GLS Infra</em>

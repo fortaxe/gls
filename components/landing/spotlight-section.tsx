@@ -26,7 +26,7 @@ const spotlightItems = [
 
 export function SpotlightSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-[94px] ">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[96px]">
         {/* Section Header */}
         <div className="text-center mb-12">

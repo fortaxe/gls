@@ -33,7 +33,7 @@ const directors = [
 
 export function BoardDirectorsSection() {
   return (
-    <section className="py-16 ">
+    <section className="pt-16 pb-[96px]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[96px]">
         {/* Section Header */}
         <div className="text-center mb-12">

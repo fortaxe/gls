@@ -21,7 +21,7 @@ export default function Home() {
         <AboutSection />
         <BoardDirectorsSection />
         <VideoReviewCoursel />
-               <SpotlightSection />
+        <SpotlightSection />
       </main>
     </div>
   );
